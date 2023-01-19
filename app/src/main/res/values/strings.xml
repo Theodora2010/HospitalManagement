@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="camera">Import Photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="about" >This application was developed to assist both patients and doctors at a medical clinic in scheduling and keeping medical data safe and accessible. App developed by the student Theodora Chivu</string>
+    <string-array name="appointment_motive">
+        <item>Routine Test</item>
+        <item>Work safety/Medical certificates</item>
+        <item>Somnology consult</item>
+        <item>Neurological consultation</item>
+        <item>Interpretation of analyses</item>
+    </string-array>
+    <string-array name="appointment_time">
+        <item>10:00-11:00</item>
+        <item>11:00-12:00</item>
+        <item>13:00-14:00</item>
+        <item>14:00-15:00</item>
+        <item>15:00-16:00</item>
+    </string-array>
+    <string-array name="doctors">
+        <item>10:00-11:00</item>
+        <item>11:00-12:00</item>
+        <item>13:00-14:00</item>
+        <item>14:00-15:00</item>
+        <item>15:00-16:00</item>
+    </string-array>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DoctorPrescriptionActivity">
+
+
+    <!--Title-->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="#ff6666"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginStart="50dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginStart="50dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/aboutinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about"
+        android:layout_marginStart="50dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/chpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutinfo"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="Change password"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/stpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chpass"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:gravity="left"
+        android:hint="Enter your password"
+        android:textColor="#E5FDFD"
+        android:textColorHint="#E5FDFD"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/ndpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stpass"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:gravity="left"
+        android:hint="Enter the new password"
+        android:textColor="#E5FDFD"
+        android:textColorHint="#E5FDFD"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="backAction"
+        android:text="Save"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/ndpass"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>

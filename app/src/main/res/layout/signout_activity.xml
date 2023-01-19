@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <!--Title-->
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Sign Out"
+        android:textColor="#ff6666"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+
+    <!--Username-->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:gravity="left"
+        android:hint="Username"
+        android:textColor="#E5FDFD"
+        android:textColorHint="#E5FDFD"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:gravity="left"
+        android:hint="Email"
+        android:textColor="#E5FDFD"
+        android:textColorHint="#E5FDFD"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="7dp"/>
+
+    <!--Passsword-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:gravity="left"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColorHint="#E5FDFD"
+        android:textColor="#E5FDFD"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_outline_lock_24"
+        android:drawablePadding="2dp"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="7dp"
+        android:gravity="left"
+        android:hint="First Name"
+        android:letterSpacing="0.05"
+        android:padding="10dp"
+        android:textColor="#E5FDFD"
+        android:textColorHint="#E5FDFD"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:gravity="left"
+        android:hint="Last Name"
+        android:textColor="#E5FDFD"
+        android:textColorHint="#E5FDFD"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="7dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date of Birth"
+        android:textAllCaps="false"
+        android:textColor="#E5FDFD"
+        android:gravity="left"
+        android:id="@+id/dateOfBirth"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="7dp"
+        android:backgroundTint="#5cbfbf"
+        android:layout_below="@+id/lastName" />
+
+    <EditText
+        android:id="@+id/secdoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateOfBirth"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#5Cbfbf"
+        android:gravity="left"
+        android:hint="If you are a doctor, enter security code"
+        android:textColor="#E5FDFD"
+        android:textColorHint="#E5FDFD"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:letterSpacing="0.05"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateOfBirth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Sign up" />
+
+
+</RelativeLayout>
